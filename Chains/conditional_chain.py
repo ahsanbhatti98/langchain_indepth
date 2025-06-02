@@ -1,9 +1,8 @@
 from dotenv import load_dotenv
 import os
 from langchain_anthropic import ChatAnthropic
-from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
-from langchain.schema.runnable import RunnableParallel, RunnableBranch, RunnableLambda
+from langchain.schema.runnable import RunnableBranch, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
 from pydantic import BaseModel, Field
 from typing import Literal
