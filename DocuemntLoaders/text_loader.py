@@ -13,6 +13,7 @@ model = ChatAnthropic(
     model="claude-3-haiku-20240307",
     api_key=ANTHROPOCENE_API_KEY,
 )
+
 parser = StrOutputParser()
 
 prompt1 = PromptTemplate(
