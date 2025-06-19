@@ -46,6 +46,6 @@ app = graph.compile()
 print(app.get_graph().draw_mermaid())
 app.get_graph().print_ascii()
 
-response = app.invoke(HumanMessage(content="AI Agents taking over content creation"))
+response = app.invoke(HumanMessage(content="Tell me a joke"))
 
 print(response)
